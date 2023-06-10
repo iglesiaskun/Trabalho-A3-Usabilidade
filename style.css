@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", Arial, sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.card .button {
+  margin-top: 10px;
+}
+
+.addFavoriteContainer {
+  margin-bottom: 10px;
+}
+
+.addFavoriteContainer button {
+  padding: 5px 10px;
+  width: 100%;
+  font-family: "Barlow", Arial, sans-serif;
+}
+
+.favoriteCard {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button,
+.favoriteCard {
+  cursor: pointer;
+}
+
+.favoriteCard h3 {
+  margin: 0;
+}
+
+.favoriteCard Button {
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.favoriteCard button {
+  margin-left: 5px;
+  padding: 3px 6px;
+  font-family: "Barlow", Arial, sans-serif;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+header {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+}
+
+#searchInput {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#searchButton {
+  padding: 5px 10px;
+  font-family: "Barlow", Arial, sans-serif;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+#newsContainer {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(50% - 10px);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card.fade-in {
+  opacity: 1;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
