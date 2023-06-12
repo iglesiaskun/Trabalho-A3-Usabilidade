@@ -71,6 +71,10 @@ function createCard(article) {
   publishedAt.textContent = `Publicado em: ${article.publishedAt}`;
   card.appendChild(publishedAt);
 
+  card.addEventListener('click', () => {
+    window.open(article.url, '_blank');
+  });
+
   return card;
 }
 
